@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations</title>
+</head>
+<body bgcolor="yellow">
+
+    <H1><center>Working on Django</center></H1>
+
+    {% if user.is_authenticated %}
+
+
+    <h1>Django Mathematical Operations:</h1>
+    <br>
+    <h2>For Multiple (x):</h2>
+    <form action="exp">
+        Enter First Number: <input type="text" name="text1">
+        Enter Second Number: <input type="text" name="text2"><br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+    <h2>For Plus (+):</h2>
+    <form action="plus">
+        Enter First Number: <input type="text" name="text1">
+        Enter Second Number: <input type="text" name="text2"><br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+    <h2>For Minus (-):</h2>
+    <form action="minus">
+        Enter First Number: <input type="text" name="text1">
+        Enter Second Number: <input type="text" name="text2"><br><br>
+        <input type="submit">
+    </form>
+
+
+
+    <h2>Logout:</h2>
+    <a href="app4/logout"><b>Logout</b></a>
+
+    {% else %}
+    <h1>For Signup:</h1>
+    <a href="app2/signup"><b>SignUp</b></a><br><br>
+
+    <h1>For Login:</h1>
+    <a href="app3/login"><b>Login</b></a>
+
+    {% endif %}
+
+
+    
+</body>
+</html>
